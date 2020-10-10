@@ -251,31 +251,13 @@ public class BanderaSeychelles{
             }
             System.out.println();
 
-            for(int i=0; i<matriz.length; i++)
-            {
-                for(int j=0; j<matriz[0].length, j++)
-
-                if (matriz[i][j]==1)
-                {
-                    System.out.print(ConsoleColors.RED_BACKGROUND);
-
-                }
-                if (matriz[i][j]==2)
-                {
-                    System.out.print(ConsoleColors.BLUE_BACKGROUND);
-
-                }
-                if (matriz[i][j]==4)
-                {
-                    System.out.print(ConsoleColors.YELLOW_BACKGROUND);
-
-                }
-                System.out.print(ConsoloColors.RESET);
+            
+            
                 
                 
                 
-            }
-            System.out.println();
+            
+            
             
             
 
