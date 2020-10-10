@@ -2,7 +2,7 @@ public class BanderaSeychelles{
     public static void main (String[] args){
 
         /*
-            1 : 
+            1 : Rojo
             2 : Azul
             3 : Blanco
             4 : Amarillo
