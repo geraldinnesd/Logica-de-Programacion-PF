@@ -22,7 +22,10 @@ public class BanderaSeychelles{
                 for(int j=0;j<8;j++)//Azul 1
                {
                     matriz[i][j]=2;
-                    System.out.print(matriz[i][j]);
+                    
+                   
+                    System.out.print(ConsoleColors.BLUE+ConsoleColors.BLUE_BACKGROUND+matriz[i][j]+ ConsoleColors.RESET);
+                    System.out.print(ConsoleColors.BLUE_BACKGROUND + " "+ ConsoleColors.RESET);
                 } 
                
 
@@ -33,7 +36,8 @@ public class BanderaSeychelles{
                 for(int j = 8; j<10; j++)
                 {
                     matriz[i][j]=4;
-                    System.out.print(matriz[i][j]);
+                    System.out.print(ConsoleColors.YELLOW+ConsoleColors.YELLOW_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                    System.out.print(ConsoleColors.YELLOW_BACKGROUND+" "+ ConsoleColors.RESET);
                 }
                 
             }
@@ -43,7 +47,8 @@ public class BanderaSeychelles{
                 for(int j=10;j<12;j++)
                 {
                     matriz[i][j]=1;
-                    System.out.print(matriz[i][j]);
+                    System.out.print(ConsoleColors.RED+ConsoleColors.RED_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                    System.out.print(ConsoleColors.RED_BACKGROUND+" "+ ConsoleColors.RESET);
                 }  
                              
             }
@@ -53,7 +58,8 @@ public class BanderaSeychelles{
                 for(int j = 12; j<14; j++)
                 {
                     matriz[i][j]=4;
-                    System.out.print(matriz[i][j]);
+                    System.out.print(ConsoleColors.YELLOW+ConsoleColors.YELLOW_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                    System.out.print(ConsoleColors.YELLOW_BACKGROUND+" "+ ConsoleColors.RESET);
                 }
                 
             }
@@ -63,18 +69,20 @@ public class BanderaSeychelles{
                 for(int j=14;j<matriz[0].length;j++)//Azul 3
                {
                     matriz[i][j]=2;
-                    System.out.print(matriz[i][j]);
+                    System.out.print(ConsoleColors.BLUE+ConsoleColors.BLUE_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                    System.out.print(ConsoleColors.BLUE_BACKGROUND+" "+ ConsoleColors.RESET);
                }
                
+               System.out.println(); 
             }
-            System.out.println(); 
             
             if(i>=7 && i<9)//Amarillo 1
             {
                 for(int j=0;j<10;j++)
                 {
                      matriz[i][j]=4;
-                     System.out.print(matriz[i][j]);
+                     System.out.print(ConsoleColors.YELLOW+ConsoleColors.YELLOW_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                     System.out.print(ConsoleColors.YELLOW_BACKGROUND+" "+ ConsoleColors.RESET);
                 } 
                 
             }
@@ -85,7 +93,8 @@ public class BanderaSeychelles{
                 for(int j = 10; j<12;j++)
                 {
                     matriz[i][j]=1;
-                    System.out.print(matriz[i][j]);
+                    System.out.print(ConsoleColors.RED+ConsoleColors.RED_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                    System.out.print(ConsoleColors.RED_BACKGROUND+" "+ ConsoleColors.RESET);
                 }
             }
 
@@ -94,10 +103,11 @@ public class BanderaSeychelles{
                 for(int j=12;j<matriz[0].length;j++)
                 {
                      matriz[i][j]=4;
-                     System.out.print(matriz[i][j]);
+                     System.out.print(ConsoleColors.YELLOW+ConsoleColors.YELLOW_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                     System.out.print(ConsoleColors.YELLOW_BACKGROUND+" "+ ConsoleColors.RESET);
                 }  
+                System.out.println();
             }
-            System.out.println();
             
 
             if(i>8 && i<12)//Rojo 1
@@ -105,10 +115,11 @@ public class BanderaSeychelles{
                 for(int j=0;j<matriz[0].length;j++)
                {
                     matriz[i][j]=1;
-                    System.out.print(matriz[i][j]);
+                    System.out.print(ConsoleColors.RED+ConsoleColors.RED_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                    System.out.print(ConsoleColors.RED_BACKGROUND+" "+ ConsoleColors.RESET);
                } 
+               System.out.println();
             }
-            System.out.println();
 
             /*if(i>8 && i<12)//Rojo 2
             {
@@ -152,7 +163,8 @@ public class BanderaSeychelles{
                 for(int j=0;j<10;j++)
                 {
                      matriz[i][j]=4;
-                     System.out.print(matriz[i][j]);
+                     System.out.print(ConsoleColors.YELLOW+ConsoleColors.YELLOW_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                     System.out.print(ConsoleColors.YELLOW_BACKGROUND+" "+ ConsoleColors.RESET);
                 }
                     
             }
@@ -165,7 +177,8 @@ public class BanderaSeychelles{
                 for(int j = 10; j<12 ; j++)
                 {
                     matriz[i][j]=1;
-                    System.out.print(matriz[i][j]);
+                    System.out.print(ConsoleColors.RED+ConsoleColors.RED_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                    System.out.print(ConsoleColors.RED_BACKGROUND+" "+ ConsoleColors.RESET);
                 }
             }
             
@@ -173,12 +186,13 @@ public class BanderaSeychelles{
             {
                 for(int j=12;j<matriz[0].length;j++)
                 {
-                     matriz[i][j]=4;
-                     System.out.print(matriz[i][j]);
+                    matriz[i][j]=4;
+                    System.out.print(ConsoleColors.YELLOW+ConsoleColors.YELLOW_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                    System.out.print(ConsoleColors.YELLOW_BACKGROUND+" "+ ConsoleColors.RESET);
                 }
-                
+                    
+                System.out.println();
             }
-            System.out.println();
 
             
 
@@ -187,7 +201,8 @@ public class BanderaSeychelles{
                 for(int j=0;j<8;j++)
                {
                     matriz[i][j]=2;
-                    System.out.print(matriz[i][j]);
+                    System.out.print(ConsoleColors.BLUE+ConsoleColors.BLUE_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                    System.out.print(ConsoleColors.BLUE_BACKGROUND+" "+ ConsoleColors.RESET);
                }
                
             }
@@ -202,7 +217,8 @@ public class BanderaSeychelles{
                 for(int j = 8; j<10; j++)
                 {
                     matriz[i][j]=4;
-                    System.out.print(matriz[i][j]);
+                    System.out.print(ConsoleColors.YELLOW+ConsoleColors.YELLOW_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                    System.out.print(ConsoleColors.YELLOW_BACKGROUND+" "+ ConsoleColors.RESET);
                 }
                 
             }
@@ -216,7 +232,8 @@ public class BanderaSeychelles{
                  for(int j = 10; j<12; j++)
                  {
                      matriz[i][j]=1;
-                     System.out.print(matriz[i][j]);
+                     System.out.print(ConsoleColors.RED+ConsoleColors.RED_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                     System.out.print(ConsoleColors.RED_BACKGROUND+" "+ ConsoleColors.RESET);
                  }
                  
              }
@@ -226,7 +243,8 @@ public class BanderaSeychelles{
                  for(int j = 12; j<14; j++)
                  {
                      matriz[i][j]=4;
-                     System.out.print(matriz[i][j]);
+                     System.out.print(ConsoleColors.YELLOW+ConsoleColors.YELLOW_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                     System.out.print(ConsoleColors.YELLOW_BACKGROUND+" "+ ConsoleColors.RESET);
                  }
                  
              }
@@ -243,13 +261,14 @@ public class BanderaSeychelles{
                {
                     matriz[i][j]=2;
             
-                    System.out.print(matriz[i][j]);
+                    System.out.print(ConsoleColors.BLUE+ConsoleColors.BLUE_BACKGROUND+matriz[i][j]+ConsoleColors.RESET);
+                    System.out.print(ConsoleColors.BLUE_BACKGROUND+" "+ ConsoleColors.RESET);
 
                } 
                // System.out.println();
                
+               System.out.println();
             }
-            System.out.println();
 
             
             
@@ -273,6 +292,12 @@ public class BanderaSeychelles{
 
 
         }
+
+        
+        
+            
+            
+        
     }
 
 }
