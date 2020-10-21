@@ -1,3 +1,4 @@
+
 //para interfaces y clases
 	import java.util.*;
 	import java.util.Arrays; 
@@ -66,18 +67,37 @@ public class Juego
 			}
 		}
 	}
+
+	public static void separador()
+	{
+		
+		System.out.println("_  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _ _  _  _  _  _  _ ");
+		System.out.println();
+		System.out.println("| /|| /|| /|| /|| /|| /|| /|| /|| /|| /|| /|| /|| || /|| /|| /|| /|| ");
+		System.out.println("_  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _");
+	}
 	
 	public static void jugar()
 	{	
 		
 		
 		
+     
+		System.out.print(ConsoleColors.CYAN_BACKGROUND+"                                         ");
+		System.out.println(ConsoleColors.RESET);
 
-		System.out.println("   _____                         ");
-		System.out.println(" _|     |.--.--.-----.---.-.----.");
-		System.out.println("|       ||  |  |  _  |  _  |   _|");
-		System.out.println("|_______||_____|___  |___._|__|  ");
-		System.out.println("               |_____|        ");
+		System.out.println(ConsoleColors.PURPLE_BOLD_BRIGHT+"      _____                         ");
+		System.out.println(ConsoleColors.PURPLE_BOLD_BRIGHT+"    _|     |.--.--.-----.---.-.----.");
+		System.out.println(ConsoleColors.PURPLE_BOLD_BRIGHT+"   |       ||  |  |  _  |  _  |   _|");
+		System.out.println(ConsoleColors.PURPLE_BOLD_BRIGHT+"   |_______||_____|___  |___._|__|  ");
+		System.out.println(ConsoleColors.PURPLE_BOLD_BRIGHT+"                  |_____|        ");
+		System.out.println(ConsoleColors.RESET);
+		System.out.print(ConsoleColors.CYAN_BACKGROUND+"                                         ");
+		System.out.println(ConsoleColors.RESET);
+
+		
+		
+
 
 		System.out.println();
 		String banderas[] = ConsoleFile.read("info_banderas.csv");
@@ -117,7 +137,7 @@ public class Juego
 			bandera=false;
 
 		}while(bandera);
-		
+		separador();
 		System.out.println();
 		System.out.println("Siguiente destino");
 		System.out.println("Escoge una actividad que quieras realizar después de turistear: ");
@@ -295,6 +315,54 @@ public class Juego
 				bandera = false;
 		}while(bandera);
 
+
+		//Cuba penúltima pregunta
+			imprimirGraficoBandera(banderas, indices[20]);
+		System.out.println();
+		System.out.println("Estamos por terminar el tour");
+		System.out.println();
+		System.out.println("Cuba es un país poco industrializado debido a su estructura política, ");
+		System.out.println("incluso muchos insumos básicos no son fácil de conseguir,:");
+		System.out.println("pero como buen viajero debes estar preparado para todo");
+		System.out.println("Elige qué llevarías contigo para no morir en el intento");
+		System.out.println();
+		System.out.println(ConsoleColors.YELLOW+"1."+ ConsoleColors.RESET+"Curitas, agua embotellada,botiquín de primeros auxilios,unguento antibiotico");
+		System.out.println(ConsoleColors.YELLOW+"2."+ ConsoleColors.RESET+"Cables para pasar corriente, Vendas, Aspirinas, Paquete de datos");
+		System.out.println(ConsoleColors.YELLOW+"3."+ ConsoleColors.RESET+"Agua oxigenada, Toallas de alcohol, Rollos de gaza, Pinzas");
+
+
+
+		do
+		{		
+			System.out.println("Ingresa un número");
+			centinela_ = ConsoleInput.getInt();
+				switch(centinela_)
+				{
+				case 1:	System.out.println("Correcto");
+						break;
+				case 2: System.out.println("Incorrecto");
+						break;
+				case 3: System.out.println("Incorrecto");
+						break;
+				default: System.out.println("Opcion no disponible");
+						break;
+				}
+				bandera = false;
+		}while(bandera);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		System.out.println("FIN DEL JUEGO");
 		System.out.println("Tu puntuacion es: ");
 
@@ -315,12 +383,42 @@ public class Juego
 	}
 	public static void instrucciones()
 	{
-		System.out.println("Estas son adivinanzas");
+		System.out.println("No todo es lo que parece");
+		System.out.println();
+		System.out.println("Piensa antes de responder");
+		System.out.println("El juego acaba cuando descubras el acertijo");
+
 		
 	}
 	public static void acerca_de()
 	{
-		System.out.println("Los autores están perdidos");
+	System.out.println(ConsoleColors.BLUE+"Los creadores son unos novatos, excusamos por la calidad"+ConsoleColors.RESET);
+	System.out.println(ConsoleColors.CYAN+"No es mucho, pero es trabajo honesto :) aceptamos tus PQRS"+ConsoleColors.RESET);
+	System.out.println("");
+	System.out.println("        "+".-._.---'     .  ");              
+  	System.out.println("   "+"(_) /         /    .-.   ");      
+    System.out.println("      "+"/--..-.   /     `-'.-.   .-.  ");
+    System.out.println("     "+"/  ./.-'_ /     /   /  )./.-'_ ");
+    System.out.println(" "+" .-/   (__.'_/_.-_.(__./`-' (__.'  ");
+    System.out.println(" " +"_/                   /  ");
+    System.out.println();
+    System.out.println("  "+"                  /");
+    System.out.println("  "+".-.  .  .-.  .-../");
+    System.out.println(" "+"(  |   )/   )(   / ");
+    System.out.println(" "+" `-'-''/   (  `-'-..");
+    System.out.println(" "+"            `-        ");
+    System.out.println();
+    System.out.println("    "+"	           .-.                   .     .                      ");
+    System.out.println("   "+".--.`-'                     /     /    .-.       ");
+    System.out.println(" "+" /  (_:    .-.  ).--..-.     / .-../     `-'.  .-..  .-.   .-.  ");
+    System.out.println(" "+"/        ./.-'_/    (  |    / (   /     /    )/   ))/   )./.-' ");
+    System.out.println(""+"(     --:-(__.'/      `-'-'_/_.-`-'-.._.(__. '/   ('/   ( (__.'  ");
+    System.out.println(""+" `.___.'                                           `-    `-    ");
+
+
+
+                         
+
 		
 	}
 	public static int[] crearIndices(int total)
@@ -351,12 +449,12 @@ public class Juego
 		do
 		{
 			System.out.println();
-			System.out.println(ConsoleColors.YELLOW+"  "+ " ___  _                 _       ");
-			System.out.println(ConsoleColors.YELLOW+"  "+ "|  _|| | ___  ___  _ _ |_| ___  ___");
-			System.out.println(ConsoleColors.YELLOW+"  "+ "|  _|| || .'|| . || | || ||   || . |");
-			System.out.println(ConsoleColors.YELLOW+"  "+ "|  _|| || .'|| . || | || ||   || . |");
-			System.out.println(ConsoleColors.YELLOW+"  "+ "|_|  |_||__,||_  ||_  ||_||_|_||_  |");
-			System.out.println(ConsoleColors.YELLOW+"  "+ "             |___||___|        |___|"+ConsoleColors.RESET);
+			System.out.println(ConsoleColors.YELLOW_BOLD_BRIGHT+"                 "+"___  _                 _");
+			System.out.println(ConsoleColors.YELLOW_BOLD_BRIGHT+"                "+"|  _|| | ___  ___  _ _ |_| ___  ___"+ConsoleColors.RESET);
+			System.out.println(ConsoleColors.PURPLE_BOLD_BRIGHT+"                "+"|  _|| || .'|| . || | || ||   || . |");
+			System.out.println(ConsoleColors.PURPLE_BOLD_BRIGHT+"                "+"|  _|| || .'|| . || | || ||   || . |"+ConsoleColors.RESET);
+			System.out.println(ConsoleColors.YELLOW_BOLD_BRIGHT+"                "+"|_|  |_||__,||_  ||_  ||_||_|_||_  |");
+			System.out.println(ConsoleColors.YELLOW_BOLD_BRIGHT+"                             "+"|___||___|        |___|"+ConsoleColors.RESET);
 			
 			System.out.println("Escoja una opción");
 			System.out.println(ConsoleColors.YELLOW+"1."+ConsoleColors.RESET+" Bandera con la que voy a jugar");
@@ -396,4 +494,3 @@ public class Juego
 	}
 
 }
-
