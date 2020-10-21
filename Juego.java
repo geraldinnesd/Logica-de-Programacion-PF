@@ -71,7 +71,14 @@ public class Juego
 	{	
 		
 		
-		System.out.println(":: Jugar ::");
+		
+
+		System.out.println("   _____                         ");
+		System.out.println(" _|     |.--.--.-----.---.-.----.");
+		System.out.println("|       ||  |  |  _  |  _  |   _|");
+		System.out.println("|_______||_____|___  |___._|__|  ");
+		System.out.println("               |_____|        ");
+
 		System.out.println();
 		String banderas[] = ConsoleFile.read("info_banderas.csv");
 		int indices[] = crearIndices(banderas.length/20);
@@ -79,7 +86,7 @@ public class Juego
 		System.out.println();	
 		System.out.println();	
 		System.out.println();	
-		System.out.println("Esta es la bandera de Colombia");	
+		System.out.println("Primer destino: Colombia");	
 		System.out.println("Para visitar a este país tenemos 8 cupos disponibles");
 		System.out.println("dependiendo de tu respuesta te decimos si viajas o no viajas");
 		System.out.println("Selecciona lo primero que llevarías");
@@ -112,8 +119,8 @@ public class Juego
 		}while(bandera);
 		
 		System.out.println();
-		System.out.println("Siguiente pregunta, ");
-		System.out.println("Escoge una actividad que quieras realizar: ");
+		System.out.println("Siguiente destino");
+		System.out.println("Escoge una actividad que quieras realizar después de turistear: ");
 		System.out.println(ConsoleColors.YELLOW+"1."+ConsoleColors.RESET+ "Pedir un Uber");
 		System.out.println(ConsoleColors.YELLOW+"2."+ConsoleColors.RESET+ "Ir al supermercado");
 		System.out.println(ConsoleColors.YELLOW+"3."+ConsoleColors.RESET+ " "+ConsoleColors.RED+ "NETFLIX"+ConsoleColors.RESET+ " and chill");
@@ -134,7 +141,7 @@ public class Juego
 				System.out.println();	
 				System.out.println();	
 				System.out.println();
-				System.out.println("Te fue asignada la bandera de Gran Bretaña");
+				System.out.println("Llegas a gran Gran Bretaña y cuentas con este gran problema");
 				System.out.println("Tienes 11 % de batería en tu telefono" + ConsoleColors.GREEN);
 				System.out.println("¿Que vas a hacer?: ");
 				System.out.println(ConsoleColors.YELLOW+"1."+ConsoleColors.RESET+" Devolverse");
@@ -210,11 +217,12 @@ public class Juego
 				System.out.println("Bienvenido a Aland. Como acabas de llegar a un pais") ;
 				System.out.println("nuevo y no conoces a nadie, prefieres verte una película.");
 				System.out.println("Solo tienes 5 películas para escoger:");
-				System.out.println(ConsoleColors.YELLOW+"1."+ConsoleColors.RESET+" Película 1");
-				System.out.println(ConsoleColors.YELLOW+"2."+ConsoleColors.RESET+" Pelicula 2");
-				System.out.println(ConsoleColors.YELLOW+"3."+ConsoleColors.RESET+" Pelicula 3");
-				System.out.println(ConsoleColors.YELLOW+"4."+ConsoleColors.RESET+" Pelicula 4");
-				System.out.println(ConsoleColors.YELLOW+"5."+ConsoleColors.RESET+" Pelicula 5");
+				System.out.println(ConsoleColors.YELLOW+"1."+ConsoleColors.RESET+" Ironman");
+				System.out.println(ConsoleColors.YELLOW+"2."+ConsoleColors.RESET+" Duel");
+				System.out.println(ConsoleColors.YELLOW+"3."+ConsoleColors.RESET+" 300");
+				System.out.println(ConsoleColors.YELLOW+"4."+ConsoleColors.RESET+"Antman");
+				System.out.println(ConsoleColors.YELLOW+"5."+ConsoleColors.RESET+" Dumbo");
+				
 
 				do
 				{	
@@ -223,9 +231,9 @@ public class Juego
 					opcion = ConsoleInput.getInt();
 					switch(opcion)
 					{
-						case 1: System.out.println("Correcto");
+						case 1: System.out.println("Incorrecto");
 								break;
-						case 2: System.out.println("Correcto");
+						case 2: System.out.println("Incorrecto");
 								break;
 						case 3: System.out.println("Incorrecto");
 								break;
@@ -233,7 +241,7 @@ public class Juego
 								break;
 					    case 5: System.out.println("Correcto");
 								break;
-						default: System.out.println("Opcion incorrecta");
+						default: System.out.println("Opcion no disponible");
 								break;
 					}
 					bandera2=false;
@@ -249,7 +257,7 @@ public class Juego
 
 		imprimirGraficoBandera(banderas, indices[18]);
 		System.out.println();
-		System.out.println("Siguiente pregunta");
+		System.out.println("Siguiente destino");
 		System.out.println();
 		System.out.println("En este país asesinaron al presidente, ");
 		System.out.println("son seis los sospechosos de haber cometido este crimen:");
@@ -324,7 +332,10 @@ public class Juego
 			contador+=20;		
 		}
 		return indices;
+
 	}
+
+
 
 	public static void menu()
 
