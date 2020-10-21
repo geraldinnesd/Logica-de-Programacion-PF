@@ -66,13 +66,22 @@ public class Juego
 			}
 		}
 	}
+
+	public static void separador()
+	{
+		
+		System.out.println("_  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _ _  _  _  _  _  _ ");
+		System.out.println();
+		System.out.println("| /|| /|| /|| /|| /|| /|| /|| /|| /|| /|| /|| /|| || /|| /|| /|| /|| ");
+		System.out.println("_  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _");
+	}
 	
 	public static void jugar()
 	{	
 		
 		
 		
-
+		
 		System.out.println("   _____                         ");
 		System.out.println(" _|     |.--.--.-----.---.-.----.");
 		System.out.println("|       ||  |  |  _  |  _  |   _|");
@@ -117,7 +126,7 @@ public class Juego
 			bandera=false;
 
 		}while(bandera);
-		
+		separador();
 		System.out.println();
 		System.out.println("Siguiente destino");
 		System.out.println("Escoge una actividad que quieras realizar después de turistear: ");
