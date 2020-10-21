@@ -247,6 +247,7 @@ public class Juego
 			bandera_=false;
 		}while(bandera_);
 
+		imprimirGraficoBandera(banderas, indices[18]);
 		System.out.println();
 		System.out.println("Siguiente pregunta");
 		System.out.println();
@@ -259,6 +260,7 @@ public class Juego
 		System.out.println(ConsoleColors.YELLOW+"3."+ ConsoleColors.RESET+" Abogado");
 		System.out.println(ConsoleColors.YELLOW+"4."+ ConsoleColors.RESET+" Ingeniero");
 		System.out.println(ConsoleColors.YELLOW+"5."+ ConsoleColors.RESET+" Xaca Rana");
+		System.out.println(ConsoleColors.YELLOW+"6."+ ConsoleColors.RESET+" Felipe");
 
 
 		do
@@ -276,6 +278,9 @@ public class Juego
 				case 4: System.out.println("Incorrecto");
 						break;
 				case 5: System.out.println("Incorrecto");
+						break;
+				case 6: System.out.println("Correcto");
+						break;
 				default: System.out.println("Opcion no disponible");
 						break;
 				}
