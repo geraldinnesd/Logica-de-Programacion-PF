@@ -66,12 +66,22 @@ public class Juego
 			}
 		}
 	}
+
+	public static void separador()
+	{
+		
+		System.out.println("_  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _ _  _  _  _  _  _ ");
+		System.out.println();
+		System.out.println("| /|| /|| /|| /|| /|| /|| /|| /|| /|| /|| /|| /|| || /|| /|| /|| /|| ");
+		System.out.println("_  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _");
+	}
 	
 	public static void jugar()
 	{	
 		
 		
 		
+     
 		System.out.print(ConsoleColors.CYAN_BACKGROUND+"                                         ");
 		System.out.println(ConsoleColors.RESET);
 
@@ -83,6 +93,10 @@ public class Juego
 		System.out.println(ConsoleColors.RESET);
 		System.out.print(ConsoleColors.CYAN_BACKGROUND+"                                         ");
 		System.out.println(ConsoleColors.RESET);
+
+		
+		
+
 
 		System.out.println();
 		String banderas[] = ConsoleFile.read("info_banderas.csv");
@@ -122,7 +136,7 @@ public class Juego
 			bandera=false;
 
 		}while(bandera);
-		
+		separador();
 		System.out.println();
 		System.out.println("Siguiente destino");
 		System.out.println("Escoge una actividad que quieras realizar después de turistear: ");
